@@ -29,7 +29,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 9. **Polish loop.** Contrast audit for 6 club x mode combinations; active nav colour per club; metal per club (gold warm, silver cool); photo
    cut-outs without outlines, feathered, drop shadow; club-specific hero backgrounds with depth.
 10. **Layout exploration.** Three layouts (A week first, B sheet, C week on top) for one club, B chosen and rolled out to all clubs.
-11. **Cleanup.** Pages restructured into sections, old drafts archived, component docs updated, repo docs reduced to one `design.md`.
+11. **Mid-fi rebuild.** Third Myclub mode (grey) so wireframes reuse real components; new search, tab, chip, RSVP and event-card components; six grey screens (Tapahtumat list and detail, Ilmoittautumiset, Jäsenkortit, Viestit ja laskut, Aloitussivu) with status bar and bottom nav.
+12. **Cleanup.** Pages restructured into sections, old drafts archived, component docs updated, repo docs reduced to one `design.md`.
 
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
@@ -49,6 +50,7 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 - **Shadow colour too faint for depth**: added a dedicated `shadow/depth` role instead of abusing the UI shadow.
 - **Contrast surprises**: club blue and green fail as text on dark cards (3.1-3.2:1); fixed by a role, not by ad hoc colours.
 - **Failing scripts roll back everything** in Figma; scripts were written to be idempotent and verified with screenshots in both modes.
+- **Fonts must be loaded for every text style** before creating text in Figma scripts; a missing font rolled a whole script back. Text node heights can also be stale; fixed heights solved overlapping headings.
 - **Process lesson:** announcing why a change was made and asking before deviating built trust; checking only dark mode once broke light mode.
 
 ## 5. Results

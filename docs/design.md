@@ -34,7 +34,8 @@ Change a token here and in Figma together. Do not add colours, sizes or spacing 
 - Touch targets at least 44 px. Cards and rows 370 px wide on a 402 px screen.
 
 ## 4. Components and layout
-- Kit (Figma page *UI Kit · luonnos*): Painike, Kortti, Listarivi, Tilamerkki, Tyyppipiste, Laskuri, Päiväsolu, Navi-valinta, Alapalkki, Valitsin, Tapahtumarivi, Tausta / Seura.
+- Mid-fi wireframes use Myclub mode **Harmaa (mid-fi)** (grey roles `mid/*`) on the same components; section `05 Mid-fidelity (uudet)`.
+- Kit (Figma page *UI Kit · luonnos*): Hakukenttä, Välilehti, Suodatinchip, Ilmoittautumisvalinta, Tapahtumakortti, Painike, Kortti, Listarivi, Tilamerkki, Tyyppipiste, Laskuri, Päiväsolu, Navi-valinta, Alapalkki, Valitsin, Tapahtumarivi, Tausta / Seura.
 - Surfaces are solid (`bg/raised`, thin border, `shadow-sm`). Glass only over the hero photo (selectors with `glass-edge`, 2 px rim).
 - **Home layout B (chosen):** compact hero 250 px (club background + player photo), rounded `bg/base` sheet with child and club selectors,
   next-event card and 2x2 quick tiles; week strip with the selected day's events is the scrolled second screen. Fixed bottom nav.

@@ -93,9 +93,12 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
   (402 − 2 × 16) with padding `lg` on all sides; gap between cards `md` (12); gap inside a card
   `sm` (8). The bottom bar is 394 px wide (4 px margins).
 - Radius: none 0, xs 4, sm 6, md 8, **lg 16 (cards, rows, tiles), xl 24 (selectors, bottom bar top corners)**, full (avatars, dots, counters).
-- Metal and glass edges: hero selectors have a 2 px outside glass rim (`Myclub/glass-edge`); silver (`Myclub/metal-silver`)
-  is the edge of Secondary buttons and quick-action tiles; gold (`metal-gold-line`) is the edge of Primary buttons and
-  the active-nav marker. Space above the next-event card is `2xl` (24).
+- Metal follows the club's colour temperature: gold for warm themes (Pitch, Keltainen), silver for cool (Sininen). One
+  paint style `Myclub/metal-club` bound to Seura variables `club/metal-1..5`; all metal edges and the nav marker use it.
+- Active nav item: label and icon use role `text/accent` (light: `action/primary`, dark: `accent`; both ≥ 4.5:1).
+- Player photos: cut out without outline, edges feathered, one drop shadow (`shadow-md`); same image in both modes.
+- Metal and glass edges: hero selectors have a 2 px outside glass rim (`Myclub/glass-edge`); the metal edge sits on Primary and Secondary buttons,
+  quick-action tiles and the active-nav marker. Space above the next-event card is `2xl` (24).
 - Home layout (top to bottom): hero with photo and selectors, next event, one row of four quick-action tiles
   (icon + one short label), week strip, selected day's events with "Näytä koko viikko". Gaps between blocks are
   at least `md` (12); the fixed bottom bar (98 px + 34 px home indicator) never covers content at rest.

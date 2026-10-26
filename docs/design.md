@@ -95,7 +95,10 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
 - Radius: none 0, xs 4, sm 6, md 8, **lg 16 (cards, rows, tiles), xl 24 (selectors, bottom bar top corners)**, full (avatars, dots, counters).
 - Metal follows the club's colour temperature: gold for warm themes (Pitch, Keltainen), silver for cool (Sininen). One
   paint style `Myclub/metal-club` bound to Seura variables `club/metal-1..5`; all metal edges and the nav marker use it.
-- Active nav item: label and icon use role `text/accent` (light: `action/primary`, dark: `accent`; both ≥ 4.5:1).
+- Nav item: active = label and icon in `text/accent` (light: `action/primary`, dark: `accent`; both ≥ 4.5:1) plus the metal line above;
+  inactive = label and icon both `text/secondary`.
+- Metal edges are not used on cards or tiles (plain `border/default`); the metal frame belongs to the hero background (`Metallikehys`,
+  two nested lines in `metal-club`, under the photo so the player breaks out of the frame).
 - Player photos: cut out without outline, edges feathered, one drop shadow (`shadow-md`); same image in both modes.
 - Hero backgrounds: component set `Tausta / Seura` (Seura=KTP: vertical stripes + large shapes; KuPS: diagonal bands + ball
   circles; HJK: concentric rings). Common layers: brushed-metal line texture (SOFT_LIGHT 40 %), `metal-club` ring lines, depth

@@ -96,7 +96,7 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
 - Metal follows the club's colour temperature: gold for warm themes (Pitch, Keltainen), silver for cool (Sininen). One
   paint style `Myclub/metal-club` bound to Seura variables `club/metal-1..5`; all metal edges and the nav marker use it.
 - Nav item: active = label and icon in `text/accent` = the club colour (Pitch green, Sininen blue, Keltainen yellow). Light mode uses
-  the strong club colour (Keltainen: dark gold `#7A5A12`, because yellow on white is 1.6:1); dark mode uses `fill/green` (club tint, ≥ 7.9:1) plus the metal line above;
+  the strong club colour (Keltainen: dark gold `#7A5A12`, because yellow on white is 1.6:1); dark mode uses `fill/green` (club tint, ≥ 7.9:1) plus the metal line above, in the club's own metal (`Myclub/metal-nav`: green metal for Pitch, silver for Sininen, gold for Keltainen);
   inactive = label and icon both `text/secondary`.
 - Metal edges are not used on cards or tiles (plain `border/default`); the metal frame belongs to the hero background (`Metallikehys`,
   two nested lines in `metal-club`, under the photo so the player breaks out of the frame).

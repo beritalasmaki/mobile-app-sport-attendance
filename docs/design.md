@@ -48,9 +48,9 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
   never behind body text.
 - **Metallic accents.** Gold and silver gradients for frame lines, achievements and membership
   cards, the primary button and the selected nav item. Decoration only, never a text colour.
-- **Glass.** Kept only on selected layers (selectors, bottom bar, status areas) over the hero;
-  other cards are solid surfaces with a subtle shadow. Text on glass must still pass contrast.
-- Shadows stay subtle (max 16 px blur, low opacity). Corners are at most 8 px.
+- **Surfaces.** Cards, list rows, day strip, quick actions and the bottom bar are **solid** (`bg/raised`).
+  Glass is allowed only over the hero photo (selectors, role `bg/overlay`, fill at least 90 %).
+- Shadows stay subtle (max 16 px blur, low opacity). Corners follow the 8 / 16 / 24 + full scale (section 3.3).
 - Layout, navigation and component behaviour stay standard (the 70 % familiar rule).
 
 ## 3. Decisions so far (draft, for review)
@@ -89,7 +89,11 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
 - Layout rules: screen margin `lg` (16); cards and list rows are **370 px** wide
   (402 − 2 × 16) with padding `lg` on all sides; gap between cards `md` (12); gap inside a card
   `sm` (8). The bottom bar is 394 px wide (4 px margins).
-- Radius: none 0, xs 4, sm 6, **md 8 (max)**, full (only avatars, dots, counters).
+- Radius: none 0, xs 4, sm 6, md 8, **lg 16 (cards, rows, tiles), xl 24 (selectors, bottom bar top corners)**, full (avatars, dots, counters).
+- Home layout (top to bottom): hero with photo and selectors, next event, one row of four quick-action tiles
+  (icon + one short label), week strip, selected day's events with "Näytä koko viikko". Gaps between blocks are
+  at least `md` (12); the fixed bottom bar (98 px + 34 px home indicator) never covers content at rest.
+- Bottom bar labels stay on one line (items hug their text; label lengths are part of the copy rules).
 - Effects: `glass`, `glass-flat`, `shadow-sm`, `shadow-md`, `glow`, `button-glow`,
   `blur-bar`; all colours and sizes come from variables.
 
@@ -122,7 +126,8 @@ Rule: no new colours, sizes or spacing without asking; every deviation is propos
   ("Töölö 2017 Siniset", "Töölö 2017 Keltavalkoiset"), never plain "P2016".
 - A place always has the location icon. A selected child always has a visible name (no icon-only
   switching), also with five or six children.
-- Real people, club crests and photos are placeholders until rights are confirmed.
+- Real people, club crests and photos are placeholders until rights are confirmed. Themed examples use
+  KTP (Pitch), HJK (Sininen) and KuPS (Keltainen) with their own team names and invented player names.
 
 ## 4. Open questions
 

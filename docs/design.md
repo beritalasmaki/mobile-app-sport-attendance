@@ -98,6 +98,8 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
 - `action/primary` is never used as text colour (dark mode contrast 3.1-3.2:1); links such as "Näytä koko viikko" use `text/accent`.
 - Figma page MY CLUB: section `03 · Etusivu B` holds the chosen layout (3 clubs x light/dark x home/week); `99 · Arkisto` holds
   all older drafts; sections 00-02 and the owner's own frames are untouched.
+- Figma page UI Kit · luonnos: sections `00 Paletti`, `01 Tokenit`, `02 Komponentit`, `03 Ikonit ja puhelin`, `04 Taustat (seurat)` (component set
+  `Tausta / Seura`), `99 Arkisto — vanhat taustat` (`Tausta / Hero`, `Tausta / Pelaaja`, their doc frame and source image).
 - Nav item: active = label and icon in `text/accent` = the club colour (Pitch green, Sininen blue, Keltainen yellow). Light mode uses
   the strong club colour (Keltainen: dark gold `#7A5A12`, because yellow on white is 1.6:1); dark mode uses `fill/green` (club tint, ≥ 7.9:1) plus the metal line above, in the club's own metal (`Myclub/metal-nav`: green metal for Pitch, silver for Sininen, gold for Keltainen);
   inactive = label and icon both `text/secondary`.

@@ -97,6 +97,10 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
   paint style `Myclub/metal-club` bound to Seura variables `club/metal-1..5`; all metal edges and the nav marker use it.
 - Active nav item: label and icon use role `text/accent` (light: `action/primary`, dark: `accent`; both ≥ 4.5:1).
 - Player photos: cut out without outline, edges feathered, one drop shadow (`shadow-md`); same image in both modes.
+- Hero backgrounds: component set `Tausta / Seura` (Seura=KTP: vertical stripes + large shapes; KuPS: diagonal bands + ball
+  circles; HJK: concentric rings). Common layers: brushed-metal line texture (SOFT_LIGHT 40 %), `metal-club` ring lines, depth
+  from `shadow/depth` (drop and inner shadows, edge vignette). Shapes use role fills with node opacity (paint opacity is lost on
+  variable-bound paints). Hero area only, never behind body text.
 - Metal and glass edges: hero selectors have a 2 px outside glass rim (`Myclub/glass-edge`); the metal edge sits on Primary and Secondary buttons,
   quick-action tiles and the active-nav marker. Space above the next-event card is `2xl` (24).
 - Home layout (top to bottom): hero with photo and selectors, next event, one row of four quick-action tiles

@@ -35,15 +35,23 @@ UI"), UX Planet ("importance of creating timeless design systems").
 4. **Resist fad-chasing.** Avoid heavy reliance on hyper-specific micro-trends (excessive
    glassmorphism, noisy neo-brutalism) unless they directly serve the core utility of the app.
 
-### Note on glass and texture (to confirm)
+### Direction: sports-card style, glass only on selected layers (decided)
 
-The current home screen uses glass surfaces over a textured background. Principle 2.4 says
-trends must serve utility. Proposed rule so the glass stays restrained:
+Pure glassmorphism is a niche, Apple-like style. Sport brands use other languages, so the
+reference is trading cards (Panini football cards, Topps gold frames, MVP hockey cards):
 
-- Glass is only used on top of the textured background (cards, selectors, nav bar), never on
-  plain surfaces. Text on glass must still pass contrast (see section 3.1).
-- Shadows are subtle (max 16 px blur, low opacity). Corners are at most 8 px.
-- Core information (next event, who and which club) must be readable without the texture.
+- **Club theme.** Each club picks two colours. Everything else (deep, tints, on-colour text)
+  is derived and contrast-checked. In Figma this is the `Seura` variable collection (modes per
+  club) that the semantic roles alias, so the whole screen re-themes by switching one mode.
+- **Hero background.** Large graphic shapes in the club colours, an oversized number or letter at
+  16 % opacity, a dot pattern and a star (component `Tausta / Hero`). Only behind the hero area,
+  never behind body text.
+- **Metallic accents.** Gold and silver gradients for frame lines, achievements and membership
+  cards, the primary button and the selected nav item. Decoration only, never a text colour.
+- **Glass.** Kept only on selected layers (selectors, bottom bar, status areas) over the hero;
+  other cards are solid surfaces with a subtle shadow. Text on glass must still pass contrast.
+- Shadows stay subtle (max 16 px blur, low opacity). Corners are at most 8 px.
+- Layout, navigation and component behaviour stay standard (the 70 % familiar rule).
 
 ## 3. Decisions so far (draft, for review)
 
@@ -52,7 +60,9 @@ trends must serve utility. Proposed rule so the glass stays restrained:
 - Two token layers in Figma: collection **Primitives** (raw values in folders `light/` and
   `dark/`) and collection **Myclub** (semantic roles with modes *Vaalea* and *Tumma* that alias
   the primitives). Components use only roles. No raw hex anywhere.
-- Palette direction: **Pitch Frost** (green + amber on cool icy neutrals, no beige).
+- Palette direction: **Pitch Frost** (green + amber on cool icy neutrals, no beige) is the default
+  club theme ("Pitch"). Other clubs (e.g. Sininen, Keltainen) are modes of the `Seura` collection;
+  contrast is computed per club and mode. Known adjustment: Sininen dark `action` is `#2F68DB`.
 - Roles: `bg/base`, `bg/raised`, `bg/sunken`, `border/default`, `text/primary`,
   `text/secondary`, `text/muted`, `text/on-fill`, `text/on-accent`, `action/primary`,
   `action/on-primary`, `fill/green`, `accent`, `brand/deep`, `status/success`,
@@ -92,8 +102,10 @@ trends must serve utility. Proposed rule so the glass stays restrained:
 
 ### 3.5 Texture and motion
 
-- Backgrounds: colour glow + soft ribbon + fine grain (grayscale PNG blended over a
-  gradient). Generator and recipe: `design/textures/`.
+- Hero backgrounds: see "Direction" above (`Tausta / Hero`). The older grain/ribbon texture
+  recipe (`design/textures/`) remains available as an optional overlay.
+- Metal tokens: paint styles `Myclub/metal-gold`, `metal-silver`, `metal-gold-line`, effect
+  `metal-glow`, bound to `metal/*` roles.
 - Movement is expressed through the texture. Motion tokens (durations, easings, reduced
   motion) are not defined yet.
 
@@ -118,4 +130,5 @@ Rule: no new colours, sizes or spacing without asking; every deviation is propos
 2. Motion tokens: durations, easings, reduced-motion behaviour.
 3. Should the "70 % familiar" rule be checked against iOS and Android navigation conventions
    (bottom tabs, back gesture) per screen?
-4. Is the glass treatment kept on every card, or only on the home screen?
+4. Which exact club colours do real clubs choose, and who validates contrast when a club picks its own?
+5. Metallic primary button and nav ring are not applied to the components yet.

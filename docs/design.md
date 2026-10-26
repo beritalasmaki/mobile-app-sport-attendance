@@ -107,8 +107,10 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
   variable-bound paints). Hero area only, never behind body text.
 - Metal and glass edges: hero selectors have a 2 px outside glass rim (`Myclub/glass-edge`); the metal edge sits on Primary and Secondary buttons,
   quick-action tiles and the active-nav marker. Space above the next-event card is `2xl` (24).
-- Home layout (top to bottom): hero with photo and selectors, next event, one row of four quick-action tiles
-  (icon + one short label), week strip, selected day's events with "Näytä koko viikko". Gaps between blocks are
+- Home layout B (chosen, all clubs, both modes): compact hero (250 px, photo above the sheet), a rounded `bg/base` sheet (radius xl)
+  holding the child and club selectors, the next-event card and a 2x2 grid of quick-action tiles (60 px high). The week strip and the
+  selected day's events are the scrolled second screen (`Tämä viikko`, "Näytä koko viikko"). Layouts A (week first) and C (week on
+  top) were explored and are kept as archive frames. Gaps between blocks are
   at least `md` (12); the fixed bottom bar (98 px + 34 px home indicator) never covers content at rest.
 - Bottom bar labels stay on one line (items hug their text; label lengths are part of the copy rules).
 - Effects: `glass`, `glass-flat`, `shadow-sm`, `shadow-md`, `glow`, `button-glow`,

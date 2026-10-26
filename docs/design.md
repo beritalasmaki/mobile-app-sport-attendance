@@ -71,6 +71,9 @@ reference is trading cards (Panini football cards, Topps gold frames, MVP hockey
 - Contrast: text 4.5:1, large text and icons 3:1. Colour never carries meaning alone (a dot for
   Treeni/Peli always has its label). `text/muted` only on `bg/raised`. `fill/green` and `accent`
   carry dark text (`text/on-accent`).
+- Checked per club and mode (6 combinations): all text pairs ≥ 4.5:1. `action/primary` as text on `bg/raised` fails in
+  Pitch and Sininen dark (3.2 / 3.1), so it is used only for icons and fills, never for text. The active nav item
+  uses `text/primary` for label and icon (same colour) plus the gold marker. `icon/detail` is decorative only.
 - Open: pressed and disabled states need tokens (`action/pressed`, `action/disabled`).
 
 ### 3.2 Typography

@@ -81,7 +81,7 @@ No payments and no Jäsenkortit in the coach app.
 | (new, coach app) | Tänään, Tapahtumat, Läsnäolo, Kokoonpano, Luo tapahtuma, Viestit, Joukkueet |
 
 ## 10. Decided and open
-- Decided: invoices have their own tab (5 tabs for parents; the bottom bar component is resized from 92 px to 80 px items, labels stay on one line).
+- Decided: invoices have their own tab (5 tabs for parents; the new component `Alapalkki · Vanhempi` has items of about 77 px (the old 4-item `Alapalkki` stays for the archived screens), labels stay on one line).
 - Decided: coach app has its own accent (purple, with a purple app icon); the parent app stays blue. A coach's own child is handled in the parent app.
 - Open: purple accent needs a contrast check in light and dark mode before it is added to the tokens.
 - Open: repo name stays `mobile-app-sport-attendance`.

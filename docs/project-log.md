@@ -32,7 +32,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 11. **Mid-fi rebuild.** Third Myclub mode (grey) so wireframes reuse real components; new search, tab, chip, RSVP and event-card components; six grey screens (Tapahtumat list and detail, Ilmoittautumiset, Jäsenkortit, Viestit ja laskut, Aloitussivu) with status bar and bottom nav.
 12. **Feedback round on event and invoices.** Owner asked for event tabs (info, participants, messages), description with links and attachments, Google Maps link, participant photos with full names, and a clearer invoice list with a billing message. Six new components and six grey screens added.
 13. **Rationale blocks.** Each of the 11 mid-fi screens got a text card above it answering "which user friction does this solve and why is it designed this way", labelled as hypotheses for the case study.
-14. **Cleanup.** Pages restructured into sections, old drafts archived, component docs updated, repo docs reduced to one `design.md`.
+14. **Owner redesign of event detail.** The owner edited the detail screen directly (summary card with RSVP first); I had overwritten it by rebuilding. Lesson: read the current frame state before editing and never rebuild a frame the owner has touched. Added copy action, map block and stronger selected RSVP.
+15. **Cleanup.** Pages restructured into sections, old drafts archived, component docs updated, repo docs reduced to one `design.md`.
 
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |

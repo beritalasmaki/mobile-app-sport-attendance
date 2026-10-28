@@ -12,15 +12,15 @@ Change a token here and in Figma together. Do not add colours, sizes or spacing 
 5. **Timeless UI.** Clarity over cleverness; about 70 % standard patterns; strong hierarchy; generous whitespace; tokens before flair.
 6. **Process.** Grayscale structure first, strict component library, audit for muscle memory, resist fads (glass only on photos).
 
-## 2. Colour tokens (Figma: Primitives, Club Coach, Seura)
-- Layers: `Primitives` (raw, folders `light/` `dark/`) -> `Club Coach` roles (modes **Vaalea / Tumma**) -> `Seura` club modes (**Pitch, Sininen, Keltainen**).
+## 2. Colour tokens (Figma: Primitives, Club Coach, Teema)
+- Layers: `Primitives` (raw values by palette: `brand/<seura>/<light|dark>/primary|secondary|tertiary|on-primary|fill`, `neutral/`, `status/`, `effect/`, `metal/`) -> `Club Coach` roles (modes **Vaalea / Tumma / Harmaa**) -> `Teema` (modes **Pitch, Sininen, Keltainen**; groups `primary/`, `secondary/`, `tertiary/`, `metal/`, `nav/`). Palette names: Primary = club colour, Secondary = deep shade, Tertiary = accent.
 - Surfaces: `bg/base` page, `bg/raised` cards, `bg/sunken` panels, `bg/overlay` selectors on photos (92 %), `border/default`.
 - Text: `text/primary`, `text/secondary`, `text/muted` (only on raised), `text/on-fill`, `text/on-accent`, `text/accent` (club colour, see below).
-- Action: `action/primary` + `action/on-primary`; `fill/green` (club tint), `accent`, `brand/deep`, `status/success|danger`.
+- Action: `action/primary` + `action/on-primary`; `fill/club` (club colour fill), `accent`, `brand/deep`, `status/success|danger`.
 - `action/primary` is never used as text on dark surfaces (3.1-3.2:1). Links and active nav use `text/accent`:
-  light = strong club colour (Keltainen: dark gold `#7A5A12`, yellow on white is 1.6:1), dark = `fill/green` (7.9:1 or more).
+  light = strong club colour (Keltainen: dark gold `#7A5A12`, yellow on white is 1.6:1), dark = `fill/club` (7.9:1 or more).
 - Club themes: Pitch = KTP (green, gold metal), Sininen = HJK (blue, silver metal), Keltainen = KuPS (yellow, gold metal).
-- Metal: paint styles `metal-club` (edges, hero frame) and `metal-nav` (active nav line: green metal / silver / gold) bound to Seura variables.
+- Metal: paint styles `metal-club` (edges, hero frame) and `metal-nav` (active nav line: green metal / silver / gold) bound to Teema variables.
 - Depth: `shadow/color` (UI, subtle), `shadow/depth` (hero only), `glass/*`, `glow/color`, `icon/detail` (decorative only), `chrome/home-indicator`.
 - Contrast: text 4.5:1, icons and graphics 3:1; colour never carries meaning alone. All six club x mode combinations checked.
 

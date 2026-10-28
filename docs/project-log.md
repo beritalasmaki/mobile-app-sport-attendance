@@ -22,7 +22,7 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 5. **Components.** Eleven component sets with variants and properties: button, card, list row, badges, counter, day cell, nav item, bottom bar,
    selector, event row. Documentation frame per component.
 6. **Sports-card direction.** Owner supplied card references. New concept: club picks two colours, big graphic shapes, gold/silver accents,
-   glass only over photos. Implemented as a `Seura` variable collection (modes per club) that all roles alias, so one switch re-themes a screen.
+   glass only over photos. Implemented as a variable collection (`Seura`, later renamed `Teema`) (modes per club) that all roles alias, so one switch re-themes a screen.
 7. **Real content.** Owner's cut-out player photo as hero, club crest and team names per theme (KTP, HJK, KuPS), long example texts for stress testing.
 8. **Rework after feedback.** Nav label wrapped, glass looked bad in dark mode, bottom of home screen was cluttered. New rules: radius 8/16/24,
    solid surfaces, one row of quick actions, week strip with the selected day's events.
@@ -44,6 +44,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 
 19. **Parent app redraw started and process timeline.** Five-item bottom bar component, new Tänään (RSVP in the next-event card, reminder rows for invoice and sign-up deadline) and Kalenteri screens in Figma section `06`. A process timeline (five phases, items marked Valmis / Käynnissä / Tulossa with icon, fill or dashed outline, never colour alone) is in section `07 · Prosessi · timeline` for the case study; it is updated as phases progress.
 
+20. **Token architecture.** Text styles grouped into Heading / Body / Component. Primitives regrouped by palette (brand primary / secondary / tertiary per club, neutral, status, effect, metal); `Seura` renamed `Teema` with groups primary, secondary, tertiary, metal, nav; role `fill/green` renamed `fill/club` (it is not always green). Names only changed, all bindings and values verified unchanged. Architecture diagram added in Figma section `08 · Design system -arkkitehtuuri`.
+
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
 |---|---|---|
@@ -51,7 +53,7 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 | Primitives -> roles -> club modes | One switch themes everything, light/dark independent | More variables to maintain |
 | Solid surfaces, glass only on photos | Glass was unreadable and inaccessible in dark mode | Less "trendy" look, better legibility |
 | Radius 8/16/24 instead of max 8 | Owner liked rounded forms, hierarchy by size | Rule changed mid-project, all components rebound |
-| Metal by colour temperature | Cool club = silver, warm = gold reads coherent | Extra Seura variables |
+| Metal by colour temperature | Cool club = silver, warm = gold reads coherent | Extra Teema variables |
 | `text/accent` role | No single colour passed contrast in both modes | Dark gold instead of yellow in light Keltainen theme |
 | Club-specific hero backgrounds | Each club should feel different, like trading cards | More layers, opacity set on nodes |
 | Two apps (parent, coach) instead of one with role switch | Different jobs and mental models (home vs work), smaller navigation per app, no wrong-audience messages, no role-per-team UI | Two store listings and releases, two notification streams for dual-role users (shared account, deep links, per-app settings); fallback: one app with Koti / Työ mode |

@@ -36,6 +36,10 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 15. **Scope change and rename.** No permission to redesign the original club app, so the owner builds an own product, **Club Coach**. Shop removed from navigation for now (four items). Variable collections, styles and the Figma page were renamed from the old name to Club Coach.
 16. **Cleanup.** Pages restructured into sections, old drafts archived, component docs updated, repo docs reduced to one `design.md`.
 
+17. **Information architecture.** The mid-fi screens copied the original app's structure, so a new IA was drafted (`docs/information-architecture.md`).
+    The owner asked whether coaches and parents could have separate apps. Decision: design two apps, **Club Coach** and **Club Coach Valmentaja**, on one design system and account.
+    Announcements are read-only; invoices are paid by links to the bank and MobilePay. Mid-fi is redrawn only after the owner approves the IA.
+
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
 |---|---|---|
@@ -46,6 +50,9 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 | Metal by colour temperature | Cool club = silver, warm = gold reads coherent | Extra Seura variables |
 | `text/accent` role | No single colour passed contrast in both modes | Dark gold instead of yellow in light Keltainen theme |
 | Club-specific hero backgrounds | Each club should feel different, like trading cards | More layers, opacity set on nodes |
+| Two apps (parent, coach) instead of one with role switch | Different jobs and mental models (home vs work), smaller navigation per app, no wrong-audience messages, no role-per-team UI | Two store listings and releases, two notification streams for dual-role users (shared account, deep links, per-app settings); fallback: one app with Koti / Työ mode |
+| Announcements read-only | General notices; replies would turn them into mixed threads | Questions must go to event or invoice threads |
+| Invoice payment by bank / MobilePay links | No payment integration or card handling needed in v1 | User leaves the app to pay; no automatic paid status until later |
 | Layout B (sheet) | Keeps hero emotion and first-screen essentials; week on second screen | Week view needs scrolling |
 
 ## 4. Problems and what they taught

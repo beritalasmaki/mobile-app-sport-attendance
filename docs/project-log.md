@@ -40,6 +40,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
     The owner asked whether coaches and parents could have separate apps. Decision: design two apps, **Club Coach** and **Club Coach Valmentaja**, on one design system and account.
     Announcements are read-only; invoices are paid by links to the bank and MobilePay. Mid-fi is redrawn only after the owner approves the IA.
 
+18. **Technology and portfolio scope.** The owner builds front-end and design; backend and security would be hired. Decision: portfolio version = Figma prototype plus an installable PWA with mock data (React, Vite, TypeScript, Tailwind, Vercel), two apps from one monorepo. Backend is specified as an interface (`docs/technology.md`). Owner answers to the IA: invoices get their own tab (five tabs for parents), the coach app gets a purple accent and icon, repo name stays.
+
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
 |---|---|---|
@@ -51,6 +53,9 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 | `text/accent` role | No single colour passed contrast in both modes | Dark gold instead of yellow in light Keltainen theme |
 | Club-specific hero backgrounds | Each club should feel different, like trading cards | More layers, opacity set on nodes |
 | Two apps (parent, coach) instead of one with role switch | Different jobs and mental models (home vs work), smaller navigation per app, no wrong-audience messages, no role-per-team UI | Two store listings and releases, two notification streams for dual-role users (shared account, deep links, per-app settings); fallback: one app with Koti / Työ mode |
+| Portfolio PWA with mock data, backend as interface | Shows the owner's real skills (front-end to production) without collecting children's data or claiming security work | Not a full-stack product; must be stated honestly in the case study |
+| Invoices as own tab (5 tabs) | Payment is a frequent, time-critical task and needs a visible badge | Tab items narrower (80 px), a fifth tab is the practical iOS maximum |
+| Purple accent for the coach app | Home and work apps are told apart at a glance on the home screen | New accent needs contrast checks in both modes |
 | Announcements read-only | General notices; replies would turn them into mixed threads | Questions must go to event or invoice threads |
 | Invoice payment by bank / MobilePay links | No payment integration or card handling needed in v1 | User leaves the app to pay; no automatic paid status until later |
 | Layout B (sheet) | Keeps hero emotion and first-screen essentials; week on second screen | Week view needs scrolling |

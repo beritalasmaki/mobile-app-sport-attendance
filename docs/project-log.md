@@ -48,6 +48,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 
 21. **Design system README.** `docs/design-system/README.md` explains every part (collections, palette folders, role naming such as primary / on-primary, styles, components) and sets change rules: raw values only change with owner approval and a full contrast re-check; deprecate before deleting.
 
+22. **Colour usage rules.** `docs/design-system/colour-usage.md`: neutrals first, one primary action per screen, identity versus state, decision order for choosing a colour, per-role do and do-not table and a contrast table computed for all six club × mode combinations. The audit found four issues (text/on-fill flips brightness between modes, no warning status, weak border contrast, accent as a graphic on white in Pitch light); they are listed for the owner's decision and nothing has been changed yet.
+
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
 |---|---|---|

@@ -1,7 +1,7 @@
 # design.md
 
 Single source of truth for UI design in this project (Figma file *Design Work* and code). Finnish UI text.
-Change a token here and in Figma together. The reasons behind the names and the change rules are in `docs/design-system/README.md`. Do not add colours, sizes or spacing that are not tokens without asking.
+Change a token here and in Figma together. The reasons behind the names and the change rules are in `docs/design-system/README.md`; colour usage rules (when to use which colour, verified contrast pairs) are in `docs/design-system/colour-usage.md`. Do not add colours, sizes or spacing that are not tokens without asking.
 
 ## 1. Principles
 1. **Ten interaction principles (Nielsen).** Show system state, speak the user's language, give control (cancel always has an X),

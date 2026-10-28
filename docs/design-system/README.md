@@ -67,6 +67,8 @@ Groups: `primary/` (`base`, `on`, `tint`, `text`), `secondary/` (`base`), `terti
 | `icon/detail`, `avatar/from·to`, `chrome/home-indicator` | Decorative details, avatar gradient, iOS home indicator |
 | `metal/gold-1..5`, `metal/silver-1..5` | Metal finishes (also as paint styles) |
 
+When a colour may or may not be used, with computed contrast for every pair: `colour-usage.md`.
+
 ## 6. Styles
 - **Text styles**, font Raleway, folder `Club Coach/`:
   `Heading/` Display, H1, H2, H3 · `Body/` Text, Text-strong, Small-text, Small-text-strong, Caption · `Component/` Button, Badge, Nav, Nav-active.

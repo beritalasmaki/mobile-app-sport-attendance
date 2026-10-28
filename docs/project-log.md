@@ -33,7 +33,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 12. **Feedback round on event and invoices.** Owner asked for event tabs (info, participants, messages), description with links and attachments, Google Maps link, participant photos with full names, and a clearer invoice list with a billing message. Six new components and six grey screens added.
 13. **Rationale blocks.** Each of the 11 mid-fi screens got a text card above it answering "which user friction does this solve and why is it designed this way", labelled as hypotheses for the case study.
 14. **Owner redesign of event detail.** The owner edited the detail screen directly (summary card with RSVP first); I had overwritten it by rebuilding. Lesson: read the current frame state before editing and never rebuild a frame the owner has touched. Added copy action, map block and stronger selected RSVP.
-15. **Cleanup.** Pages restructured into sections, old drafts archived, component docs updated, repo docs reduced to one `design.md`.
+15. **Scope change.** No permission to redesign MyClub's own app, so the owner will build an own competing product. Shop (Verkkokauppa) removed from navigation for now (four items). Naming of tokens and pages still carries the MyClub name and should be renamed.
+16. **Cleanup.** Pages restructured into sections, old drafts archived, component docs updated, repo docs reduced to one `design.md`.
 
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
@@ -63,6 +64,6 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 - Documentation: `docs/design.md` (rulebook, under 100 lines) and this log. Figma pages organised into numbered sections with an archive.
 
 ## 6. Next
-- More views: Tapahtumat, Viestit ja laskut, Verkkokauppa, Omat tiedot, Jäsenkortit, Saavutukset, built from the same components.
+- More views: Tapahtumat, Omat tiedot, Jäsenkortit, Saavutukset, built from the same components.
 - Pressed/disabled states, motion tokens, HJK crest file, rights for photos and crests, hand-off notes for developers.
 - Code: not started; tokens map 1:1 to CSS variables (colour roles, spacing, radius, shadows) when implementation begins.

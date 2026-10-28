@@ -43,7 +43,7 @@ Change a token here and in Figma together. Do not add colours, sizes or spacing 
 - Surfaces are solid (`bg/raised`, thin border, `shadow-sm`). Glass only over the hero photo (selectors with `glass-edge`, 2 px rim).
 - **Home layout B (chosen):** compact hero 250 px (club background + player photo), rounded `bg/base` sheet with child and club selectors,
   next-event card and 2x2 quick tiles; week strip with the selected day's events is the scrolled second screen. Fixed bottom nav.
-- Bottom nav: five equal 74 px items, one-line labels. Active = icon and label in `text/accent` + metal line above. Inactive = `text/secondary`.
+- Bottom nav: four equal 92 px items (Aloitussivu, Tapahtumat, Viestit ja laskut, Omat tiedot; no shop in this phase), one-line labels. Active = icon and label in `text/accent` + metal line above. Inactive = `text/secondary`.
 - Hero backgrounds are club specific (KTP stripes and shapes, KuPS diagonals and circles, HJK rings), hero area only, never behind body text.
   Layers: `brand/deep`, shapes, brushed-metal lines (SOFT_LIGHT 40 %), metal rings and double frame, `shadow/depth`, edge vignette, photo.
 - Player photos: cut out without outline, feathered edge, one drop shadow, same image in both modes. Shape opacity via node opacity.

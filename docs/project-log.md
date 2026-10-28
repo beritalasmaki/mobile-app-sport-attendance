@@ -42,6 +42,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 
 18. **Technology and portfolio scope.** The owner builds front-end and design; backend and security would be hired. Decision: portfolio version = Figma prototype plus an installable PWA with mock data (React, Vite, TypeScript, Tailwind, Vercel), two apps from one monorepo. Backend is specified as an interface (`docs/technology.md`). Owner answers to the IA: invoices get their own tab (five tabs for parents), the coach app gets a purple accent and icon, repo name stays.
 
+19. **Parent app redraw started and process timeline.** Five-item bottom bar component, new Tänään (RSVP in the next-event card, reminder rows for invoice and sign-up deadline) and Kalenteri screens in Figma section `06`. A process timeline (five phases, items marked Valmis / Käynnissä / Tulossa with icon, fill or dashed outline, never colour alone) is in section `07 · Prosessi · timeline` for the case study; it is updated as phases progress.
+
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
 |---|---|---|

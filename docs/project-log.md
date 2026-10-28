@@ -46,6 +46,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 
 20. **Token architecture.** Text styles grouped into Heading / Body / Component. Primitives regrouped by palette (brand primary / secondary / tertiary per club, neutral, status, effect, metal); `Seura` renamed `Teema` with groups primary, secondary, tertiary, metal, nav; role `fill/green` renamed `fill/club` (it is not always green). Names only changed, all bindings and values verified unchanged. Architecture diagram added in Figma section `08 · Design system -arkkitehtuuri`.
 
+21. **Design system README.** `docs/design-system/README.md` explains every part (collections, palette folders, role naming such as primary / on-primary, styles, components) and sets change rules: raw values only change with owner approval and a full contrast re-check; deprecate before deleting.
+
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
 |---|---|---|

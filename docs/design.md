@@ -12,8 +12,8 @@ Change a token here and in Figma together. Do not add colours, sizes or spacing 
 5. **Timeless UI.** Clarity over cleverness; about 70 % standard patterns; strong hierarchy; generous whitespace; tokens before flair.
 6. **Process.** Grayscale structure first, strict component library, audit for muscle memory, resist fads (glass only on photos).
 
-## 2. Colour tokens (Figma: Primitives, Myclub, Seura)
-- Layers: `Primitives` (raw, folders `light/` `dark/`) -> `Myclub` roles (modes **Vaalea / Tumma**) -> `Seura` club modes (**Pitch, Sininen, Keltainen**).
+## 2. Colour tokens (Figma: Primitives, Club Coach, Seura)
+- Layers: `Primitives` (raw, folders `light/` `dark/`) -> `Club Coach` roles (modes **Vaalea / Tumma**) -> `Seura` club modes (**Pitch, Sininen, Keltainen**).
 - Surfaces: `bg/base` page, `bg/raised` cards, `bg/sunken` panels, `bg/overlay` selectors on photos (92 %), `border/default`.
 - Text: `text/primary`, `text/secondary`, `text/muted` (only on raised), `text/on-fill`, `text/on-accent`, `text/accent` (club colour, see below).
 - Action: `action/primary` + `action/on-primary`; `fill/green` (club tint), `accent`, `brand/deep`, `status/success|danger`.
@@ -25,16 +25,16 @@ Change a token here and in Figma together. Do not add colours, sizes or spacing 
 - Contrast: text 4.5:1, icons and graphics 3:1; colour never carries meaning alone. All six club x mode combinations checked.
 
 ## 3. Type, space, shape, depth
-- Font **Raleway**. Styles `Myclub/`: H1 28/34 Bold, H2 22/28 Bold, H3 18/24 Bold, Text 16/22 SemiBold, Small 14/20 Medium, Button 14/20 Bold,
+- Font **Raleway**. Styles `Club Coach/`: H1 28/34 Bold, H2 22/28 Bold, H3 18/24 Bold, Text 16/22 SemiBold, Small 14/20 Medium, Button 14/20 Bold,
   Caption 12/16 Medium, Badge 12/16 Bold, Nav 11/14 SemiBold (active Bold). Titles max 2 lines, other text 1 line with ellipsis.
-- Spacing (`Myclub · Muoto`): none 0, 2xs 2, xs 4, sm 8, md 12, lg 16, xl 20, 2xl 24, 3xl 32. Screen margin lg, card gap md, card padding lg, no gap under md.
+- Spacing (`Club Coach · Muoto`): none 0, 2xs 2, xs 4, sm 8, md 12, lg 16, xl 20, 2xl 24, 3xl 32. Screen margin lg, card gap md, card padding lg, no gap under md.
 - Radius: none 0, xs 4, sm 6, md 8, **lg 16** (cards, rows, tiles), **xl 24** (selectors, sheet, nav), full (avatars, dots).
 - Effects: `shadow-sm`, `shadow-md` (low opacity, no strong shadows), `glow`, `button-glow`, `glass`, `glass-flat`, `blur-bar`, `metal-glow`.
 - Icons: Heroicons v2 outline (MIT), 24 px (20 in buttons), stroke follows the text role. iOS home indicator 134x5 in a 34 px safe area.
 - Touch targets at least 44 px. Cards and rows 370 px wide on a 402 px screen.
 
 ## 4. Components and layout
-- Mid-fi wireframes use Myclub mode **Harmaa (mid-fi)** (grey roles `mid/*`) on the same components; section `05 Mid-fidelity (uudet)`.
+- Mid-fi wireframes use Club Coach mode **Harmaa (mid-fi)** (grey roles `mid/*`) on the same components; section `05 Mid-fidelity (uudet)`.
 - Event detail has tabs Tiedot / Osallistujat / Viestit (description with links, attachments, Google Maps link, participants as "Sukunimi Etunimi" with photo, event message thread). Invoices (Laskukortti) show amount, subject, due date and status badge (icon + text, never colour only); detail screen has a "Lähetä viesti laskuttajalle" action.
 - Tabs (Välilehti, 16 px, 4 px marker, no side padding: first tab and its underline start at the 16 px margin like the text below, 24 px between tabs) are larger than filter pills (Suodatinchip, 36 px high, 14 px text); every tab has a one-line description below it. Buttons carry a descriptive icon (e.g. credit-card for pay, chat for message). Addresses are shown large (16 px bold) with a copy button and a Google Maps link. Quick tile for sign-ups is named "Ilmoittautumiset".
 - Every mid-fi screen has a rationale block above it (Hypoteesi: user problem / Ratkaisu / Periaate); problem statements are design hypotheses, not research findings.
@@ -54,6 +54,6 @@ Change a token here and in Figma together. Do not add colours, sizes or spacing 
 
 ## 6. Working rules
 - Always check light and dark mode, and all three clubs, before reporting a change. Explain why a design choice was made and ask before deviating.
-- Figma page MY CLUB: `00-02` owner's sections, `03 Etusivu B` chosen layout, `99 Arkisto` drafts. UI Kit page: `00 Paletti`, `01 Tokenit`,
+- Figma page CLUB COACH: `00-02` owner's sections, `03 Etusivu B` chosen layout, `99 Arkisto` drafts. UI Kit page: `00 Paletti`, `01 Tokenit`,
   `02 Komponentit`, `03 Ikonit`, `04 Taustat`, `99 Arkisto`. Progress and decisions: `docs/project-log.md`.
 - Open: pressed/disabled states, motion tokens, HJK crest file, photo and crest rights, other views (events, messages, shop, profile).

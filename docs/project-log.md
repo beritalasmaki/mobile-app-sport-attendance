@@ -1,4 +1,4 @@
-# Project log: MY CLUB, sports club app design
+# Project log: CLUB COACH, sports club app design
 
 Portfolio case file. Chronological record of how the design evolved, why decisions were made, what went wrong and what is next.
 Rules and tokens live in `docs/design.md`; this file keeps the story.
@@ -29,7 +29,7 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 9. **Polish loop.** Contrast audit for 6 club x mode combinations; active nav colour per club; metal per club (gold warm, silver cool); photo
    cut-outs without outlines, feathered, drop shadow; club-specific hero backgrounds with depth.
 10. **Layout exploration.** Three layouts (A week first, B sheet, C week on top) for one club, B chosen and rolled out to all clubs.
-11. **Mid-fi rebuild.** Third Myclub mode (grey) so wireframes reuse real components; new search, tab, chip, RSVP and event-card components; six grey screens (Tapahtumat list and detail, Ilmoittautumiset, Jäsenkortit, Viestit ja laskut, Aloitussivu) with status bar and bottom nav.
+11. **Mid-fi rebuild.** Third Club Coach mode (grey) so wireframes reuse real components; new search, tab, chip, RSVP and event-card components; six grey screens (Tapahtumat list and detail, Ilmoittautumiset, Jäsenkortit, Viestit ja laskut, Aloitussivu) with status bar and bottom nav.
 12. **Feedback round on event and invoices.** Owner asked for event tabs (info, participants, messages), description with links and attachments, Google Maps link, participant photos with full names, and a clearer invoice list with a billing message. Six new components and six grey screens added.
 13. **Rationale blocks.** Each of the 11 mid-fi screens got a text card above it answering "which user friction does this solve and why is it designed this way", labelled as hypotheses for the case study.
 14. **Owner redesign of event detail.** The owner edited the detail screen directly (summary card with RSVP first); I had overwritten it by rebuilding. Lesson: read the current frame state before editing and never rebuild a frame the owner has touched. Added copy action, map block and stronger selected RSVP.

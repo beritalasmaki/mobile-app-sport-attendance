@@ -25,8 +25,8 @@ Change a token here and in Figma together. Do not add colours, sizes or spacing 
 - Contrast: text 4.5:1, icons and graphics 3:1; colour never carries meaning alone. All six club x mode combinations checked.
 
 ## 3. Type, space, shape, depth
-- Font **Raleway**. Styles `Club Coach/`: H1 28/34 Bold, H2 22/28 Bold, H3 18/24 Bold, Text 16/22 SemiBold, Small 14/20 Medium, Button 14/20 Bold,
-  Caption 12/16 Medium, Badge 12/16 Bold, Nav 11/14 SemiBold (active Bold). Titles max 2 lines, other text 1 line with ellipsis.
+- Font **Raleway**. Text styles in three folders. `Club Coach/Heading/`: H1 28/34 Bold, H2 22/28 Bold, H3 18/24, Display (large numerals). `Club Coach/Body/`: Text 16/22 SemiBold, Text-strong Bold,
+  Small-text 14/20 Medium, Small-text-strong SemiBold, Caption 12/16 Medium. `Club Coach/Component/`: Button 14/20 Bold, Badge 12/16 Bold, Nav 11/14 SemiBold (Nav-active Bold). Titles max 2 lines, other text 1 line with ellipsis.
 - Spacing (`Club Coach · Muoto`): none 0, 2xs 2, xs 4, sm 8, md 12, lg 16, xl 20, 2xl 24, 3xl 32. Screen margin lg, card gap md, card padding lg, no gap under md.
 - Radius: none 0, xs 4, sm 6, md 8, **lg 16** (cards, rows, tiles), **xl 24** (selectors, sheet, nav), full (avatars, dots).
 - Effects: `shadow-sm`, `shadow-md` (low opacity, no strong shadows), `glow`, `button-glow`, `glass`, `glass-flat`, `blur-bar`, `metal-glow`.

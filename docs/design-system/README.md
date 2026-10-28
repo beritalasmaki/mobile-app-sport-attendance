@@ -25,7 +25,6 @@ That is what makes three club themes, light and dark mode and a grey wireframe m
 | **Teema** | Pitch, Sininen, Keltainen | The club's colours as `primary`, `secondary`, `tertiary`, `metal`, `nav`. Choosing a mode re-themes a whole screen. |
 | **Club Coach** | Vaalea, Tumma, Harmaa (mid-fi) | The **roles**: what a colour is *for* (`bg/base`, `text/primary`, `action/primary` ...). Components bind only to these. |
 | **Club Coach · Muoto** | Mode 1 | Spacing, radius and effect sizes (numbers). |
-| `cooliocns` | Mode 1 | The owner's earlier icon colour variable. Not part of this system, left untouched. |
 
 How the layers connect: a role in `Club Coach` points either to `Teema` (when the colour belongs to the club) or straight to `Primitives` (neutral greys, status colours, glass).
 `Teema` points to `Primitives`. So *club mode* × *Vaalea/Tumma* = 3 × 2 = 6 looks; Harmaa is the grey mid-fi look.

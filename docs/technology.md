@@ -5,7 +5,7 @@ Status: proposal. Purpose: a portfolio case where the design is also a working, 
 ## 1. Scope for the portfolio
 1. **Figma prototype** of the approved hi-fi screens (shared link, embedded in the portfolio).
 2. **PWA front-end with mock data**: React + Vite + TypeScript + Tailwind, deployed to Vercel, installable on a phone's home screen.
-3. **Two apps from one codebase**: monorepo with a shared package (tokens, components, mock data, types) and two apps (Club Coach for parents, Club Coach Valmentaja for coaches).
+3. **Two apps from one codebase**: monorepo with a shared package (tokens, components, mock data, types) and two apps (Club Coach for parents, Club Coach for Coaches for coaches).
 
 No real accounts, no real data. Names, teams and clubs are fictional. Real crests, photos and any material from the original club app are not used. Children's data is not collected anywhere in the portfolio version.
 

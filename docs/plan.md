@@ -1,6 +1,6 @@
 # Club Coach: plan for the English, adaptive redesign
 
-Status: **agreed 2026-11-06**, step 0 done, step 1 started. Scope: **Club Coach (parents) only**. The coach app is parked, see `docs/coach-app-parked.md`.
+Status: **agreed 2026-11-06**; steps 0 and 1 done, step 2 (UI kit audit) is next. Scope: **Club Coach (parents) only**. The coach app is parked, see `docs/coach-app-parked.md`.
 
 ## Decisions
 | Topic | Decision |
@@ -12,20 +12,20 @@ Status: **agreed 2026-11-06**, step 0 done, step 1 started. Scope: **Club Coach 
 | Foldable coverage | 5-6 key screens get a foldable variant: Today, Calendar + event detail (list-detail panes), Conversations, Invoice. Other screens get notes (max width, reflow, nav rail). |
 | Android foldable | Generic medium class (600-839 dp), not one model. |
 | Frames | Compact 402, Pro Max 440, Android medium 707, Duo inner 669, Duo outer 466 (`docs/devices.md`). |
-| Formats | Dates `Thu 18 May, 17:30`, money `EUR 120.00`, fictional Finnish club and team names stay. Token modes: `Light/Dark/Grey`, `Theme`, `Pitch/Blue/Yellow`. |
+| Formats | Dates `Thu 12 Nov, 17:30` (fictional "today" = Thu 12 Nov 2026), money `EUR 120.00`, 24 h clock, fictional Finnish club and team names stay. Token modes: `Light/Dark/Grey`, `Theme`, `Pitch/Blue/Yellow`. |
 | Existing mid-fi | Section 05 (old structure) goes to the archive after the lo-fi is approved. Section 06 and the rationale blocks are the starting point for mid-fi. |
 
-## Device rules (from the Android adaptive guide, to confirm in step 0)
+## Device rules (full list in `docs/devices.md`)
 - Design by window size class, width first: compact = 1 pane, medium = 1-2 panes, expanded = multiple panes. Do not lock to portrait.
 - Constrain content and component width; never stretch inputs and buttons. Components change presentation (bottom sheet -> side sheet, bottom bar -> nav rail).
 - Foldables: unfolded inner screen and the small cover screen are both targets. Avoid placing controls across the hinge.
-- Apple: guidance from the pages in `docs/references.md` (to be added with the pasted Duo specs); iPhone frame stays 402 x 874.
+- Apple: Duo guidance in `docs/references.md` and `docs/devices.md`; iPhone frame stays 402 x 874.
 
 ## Steps and gates
 | # | Step | Result | Gate |
 |---|---|---|---|
-| 0 | Decisions and docs | Device matrix, language rules, `design.md` and process meter updated | Owner approves the matrix |
-| 1 | English translation | Inventory of all text nodes, FI -> EN glossary, then text, names, tokens, pages, docs | Glossary approved before applying; no Finnish left |
+| 0 (done) | Decisions and docs | Device matrix, language rules, `design.md` and process meter updated | Owner approves the matrix |
+| 1 (done) | English translation | Inventory of all text nodes, FI -> EN glossary, then text, names, tokens, pages, docs | Glossary approved before applying; no Finnish left |
 | 2 | UI kit audit | List of elements used per screen vs the kit; missing ones added (nav rail, pane container, hinge gap, ...), unused moved to archive | Audit list approved |
 | 3 | Lo-fi | Grey box screens on `Low fidelity` page, structure and content visible, compact + key foldable screens | Screen list and key flows approved |
 | 4 | Mid-fi | Built from lo-fi with kit components in the grey mode, rationale blocks kept | Key flows clickable as prototype |
@@ -34,7 +34,5 @@ Status: **agreed 2026-11-06**, step 0 done, step 1 started. Scope: **Club Coach 
 After every step: update `docs/project-log.md`. Never edit a frame the owner has touched without reading its current state first.
 
 ## Open questions
-- Apple Duo specs (owner to paste).
-- Date, time and currency format in English UI (e.g. `Thu 18 May, 17:30` and `EUR 120.00`, or keep Finnish club context with `18.5.`)?
-- Names: keep Finnish club and team names (KTP, HJK, KuPS, Kotka 2017 Vihreät) as fictional examples?
-- Rename token modes: `Vaalea/Tumma/Harmaa` -> `Light/Dark/Grey`, `Teema` -> `Theme`, `Pitch/Sininen/Keltainen` -> `Pitch/Blue/Yellow`. To confirm in the glossary (step 1).
+- Process meter on the Plan page still shows the old phases (translated literally); rewrite it to the phases in this plan.
+- Archive page drafts stay in Finnish by decision; they are labelled with a note.

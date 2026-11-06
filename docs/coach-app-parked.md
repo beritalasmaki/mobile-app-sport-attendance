@@ -1,7 +1,7 @@
-# Club Coach Valmentaja (coach app): parked specs
+# Club Coach for Coaches (coach app): parked specs
 
 Status: **out of scope for now** (decision 2026-11-06). Everything needed to restart is collected here. Sources stay in the other docs; this file is the entry point.
-Names below are the current Finnish working names; they are translated in the English pass when this app is picked up (e.g. Tänään -> Today, Läsnäolo -> Attendance, Kokoonpano -> Line-up, Joukkueet -> Teams).
+Names are English (translated 2026-11-06). The Finnish working names were Läsnäolo (Attendance), Kokoonpano (Line-up) and Joukkueet (Teams). App name: Club Coach for Coaches (was Club Coach Valmentaja).
 
 ## Purpose
 For coaches and assistant coaches who lead teams. Jobs: roster, attendance, group messages, create events. Own small navigation and home, so home and work stay apart and the wrong audience is not messaged.

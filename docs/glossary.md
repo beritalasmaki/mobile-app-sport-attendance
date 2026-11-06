@@ -1,6 +1,6 @@
 # Club Coach: FI -> EN glossary (draft for approval)
 
-Status: **proposal, step 1 of `docs/plan.md`**. Nothing is applied in Figma until the owner approves this file. Source: read-only inventory of the Figma file on 2026-11-06.
+Status: **approved and applied 2026-11-06** (step 1 of `docs/plan.md`). Decisions taken: archive drafts stay Finnish (names translated), stale doc text fixed, new fictional "today" Thu 12 Nov 2026, tab `Me`, `Match`. Extra choices made while applying: old four-item bar label `Messages and invoices` is `Inbox` (fits one line); app name `Club Coach for Coaches`; `Töölön Pallo ry` is `Töölö Pallo`; the placeholder link seura.fi became club.example. Source: read-only inventory of the Figma file on 2026-11-06.
 
 ## Inventory
 | Page | Text nodes | Unique strings | Note |

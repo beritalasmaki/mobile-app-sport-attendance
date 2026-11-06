@@ -7,7 +7,7 @@ Status: **agreed 2026-11-06**, step 0 not yet started. Scope: **Club Coach (pare
 |---|---|
 | Language | Everything in English: screen text, layer, component, variable, mode and page names, docs. Reason: the project is a portfolio use case. |
 | Devices | iPhone, Android phone, foldable Android (unfolded and cover screen), Apple dual-screen "Duo" device. |
-| Apple Duo | The owner will paste the specs. Until then no sizes are invented; the device is a placeholder in the device matrix. |
+| Apple Duo | Specs received and read from Apple's Figma kit: inner 669 x 951 / 951 x 669, outer 466 x 678 / 678 x 466. Device matrix and layout rules in `docs/devices.md`; notes and sources in `docs/references.md`. |
 | App scope | Parent app only (5 tabs and their sub-screens, about 14-16 screens). |
 | Foldable coverage | 5-6 key screens get a foldable variant: Today, Calendar + event detail (list-detail panes), Conversations, Invoice. Other screens get notes (max width, reflow, nav rail). |
 | Existing mid-fi | Section 05 (old structure) goes to the archive after the lo-fi is approved. Section 06 and the rationale blocks are the starting point for mid-fi. |

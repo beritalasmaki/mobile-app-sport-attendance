@@ -91,8 +91,10 @@ Built from the approved list; states, the Banner and the Me scope followed the p
 Not done or changed from the proposal:
 - **Tab bar** (tabs row with description): not built; the row is composed of Tab instances and a description text. Revisit in mid-fi.
 - **Summary card**: single use on Event details, not componentised.
-- **Invoice card with nested Status badge**: needs new Status badge variants for Unpaid, Overdue and Paid; open.
-- **Radius frame (lg 16, xl 24 swatches)** and **Button doc clipping**: not fixed yet.
+- **Invoice card with nested Status badge**: done (Status badge variants Unpaid, Overdue, Paid added; Invoice card nests them).
+- **Radius frame** (swatches lg 16 and xl 24 added) and **Button doc clipping** (set resized): done.
 - The old four-item Bottom bar stays until section 05 is archived after lo-fi approval.
 - Reserved region is a generic overlay; Apple's own overlays (outer camera, fold) are in the Apple kit, not copied.
 - Duo side bar and Nav rail are static; the active item is fixed to Today (set Active per screen when used).
+
+Checks (2026-11-06): the new section was viewed in Light + Pitch, Dark + Blue and Light + Yellow. One defect found and fixed: the Default Status bar had a raw white fill (now bound to `bg/base`). The Over image status bar is meant for photos only. Not yet checked: Dark + Pitch, Dark + Yellow, Light + Blue (the same roles are used, so low risk, but not verified).

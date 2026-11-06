@@ -1,6 +1,6 @@
 # Club Coach: plan for the English, adaptive redesign
 
-Status: **agreed 2026-11-06**; steps 0 and 1 done, step 2 (UI kit audit) is next. Scope: **Club Coach (parents) only**. The coach app is parked, see `docs/coach-app-parked.md`.
+Status: **agreed 2026-11-06**; steps 0, 1 and 2 done; step 3 (lo-fi) starts with the screen list for approval. Scope: **Club Coach (parents) only**. The coach app is parked, see `docs/coach-app-parked.md`.
 
 ## Decisions
 | Topic | Decision |
@@ -26,7 +26,7 @@ Status: **agreed 2026-11-06**; steps 0 and 1 done, step 2 (UI kit audit) is next
 |---|---|---|---|
 | 0 (done) | Decisions and docs | Device matrix, language rules, `design.md` and process meter updated | Owner approves the matrix |
 | 1 (done) | English translation | Inventory of all text nodes, FI -> EN glossary, then text, names, tokens, pages, docs | Glossary approved before applying; no Finnish left |
-| 2 | UI kit audit | List of elements used per screen vs the kit; missing ones added (nav rail, pane container, hinge gap, ...), unused moved to archive | Audit list approved |
+| 2 (done) | UI kit audit | List of elements used per screen vs the kit; missing ones added (nav rail, pane container, hinge gap, ...), unused moved to archive | Audit list approved |
 | 3 | Lo-fi | Grey box screens on `Low fidelity` page, structure and content visible, compact + key foldable screens | Screen list and key flows approved |
 | 4 | Mid-fi | Built from lo-fi with kit components in the grey mode, rationale blocks kept | Key flows clickable as prototype |
 | 5 | Hi-fi | 3 clubs x light/dark, foldable variants for key screens, contrast check | All combinations checked |

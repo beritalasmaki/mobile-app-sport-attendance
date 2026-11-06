@@ -46,6 +46,8 @@ Rules and tokens live in `docs/design.md`; this file keeps the story.
 
 20. **Token architecture.** Text styles grouped into Heading / Body / Component. Primitives regrouped by palette (brand primary / secondary / tertiary per club, neutral, status, effect, metal); `Seura` renamed `Teema` with groups primary, secondary, tertiary, metal, nav; role `fill/green` renamed `fill/club` (it is not always green). Names only changed, all bindings and values verified unchanged. Architecture diagram added in Figma section `08 · Design system -arkkitehtuuri`.
 
+21. **Plan for the English, adaptive redesign.** The project becomes a portfolio use case, so everything (screen text, layer, component and token names, docs) moves to English. New device targets: iPhone, Android phone, foldable Android and an Apple dual-screen device (specs to be supplied by the owner). Audit of the Figma file showed that the Low and High fidelity pages are empty, the mid-fi section 05 still follows the old structure, and `design.md` page names are out of date. New order: decisions, translation, UI kit audit, lo-fi, mid-fi, hi-fi, each with a gate (`docs/plan.md`). Scope is the parent app only; the coach app is parked with its specs in `docs/coach-app-parked.md`. Foldable variants are drawn for 5-6 key screens and described with notes elsewhere, following the Android advice to design key screens per size class.
+
 ## 3. Key decisions and trade-offs
 | Decision | Why | Cost |
 |---|---|---|

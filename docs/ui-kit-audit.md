@@ -1,6 +1,6 @@
 # Club Coach: UI kit audit (draft for approval)
 
-Status: **proposal, step 2 of `docs/plan.md`**. Nothing is changed in Figma except translating 160 leftover layer names (found while auditing; they were missed in step 1). Basis: read-only scan of the UI Kit page and all 14 mid-fi screens on 2026-11-06.
+Status: **approved by the owner 2026-11-06, mostly built** (step 2 of `docs/plan.md`). See section 7 for what was built and what is open. Basis: read-only scan of the UI Kit page and all 14 mid-fi screens on 2026-11-06.
 
 ## 1. What the kit contains
 28 component sets or components and 43 icons. Used by the 14 mid-fi screens (instances): Nav item 59, Tab 24, Counter 14, Day cell 14, Type dot 13, Bottom bar 11, RSVP choice 8, Card 8, Selector 6, Event card 6, Filter chip 6, Participant row 5, Button 5, Search field 4, Event row 4, Invoice card 4, Message bubble 3, Bottom bar · Parent 3, Background / Club 2, Reminder row 2, Attachment row 1, Message field 1.
@@ -67,3 +67,32 @@ Screens planned for lo-fi (about 19): Today, Today week, Calendar (Upcoming, Min
 2. States now or in hi-fi (proposal: hi-fi).
 3. Is the Reminder row enough as a Banner?
 4. Scope of Me: hub, children and teams, membership cards, settings (as in the screen list), or less?
+
+## 7. Result (built 2026-11-06, UI Kit page, section `05 · Screen structure and adaptive`)
+Built from the approved list; states, the Banner and the Me scope followed the proposals (states in hi-fi, Reminder row is the banner, Me as in the screen list).
+
+| Done | Notes |
+|---|---|
+| Status bar (set: Default, Over image) | Replaced 14 hand-drawn copies; Over image is transparent with light text for hero screens |
+| Screen header (Title, Description) | 8 screens |
+| Top bar (Label) | 5 screens |
+| Info row (Icon swap, Text, Copy action) | replaces time, address and participants rows on Event details |
+| Avatar (40 px, Initial) | one size only; more sizes need an owner decision |
+| Section header (Title, Action) | |
+| Toggle row (Off, On) | switch 44 x 24 is a new size, flag for review |
+| Toast, Dialog, Bottom sheet, Empty state | Dialog uses the Button component; sheet becomes a side sheet in adaptive layouts |
+| Nav rail | five Nav items, for medium, expanded and Duo |
+| Duo side bar | back and primary action on top, tab bar at the bottom (vertical controls) |
+| Pane layout | list pane (max 320) + detail pane, 707 x 823 |
+| Reserved region | annotation overlay for camera and fold |
+| Device frame (set) | iPhone 402 x 874, Pro Max 440 x 956, Android medium 707 x 823, Duo inner 669 x 951, Duo outer 466 x 678 |
+| Component property names | 33 Finnish names translated (Text, Icon left, Title, ...) |
+
+Not done or changed from the proposal:
+- **Tab bar** (tabs row with description): not built; the row is composed of Tab instances and a description text. Revisit in mid-fi.
+- **Summary card**: single use on Event details, not componentised.
+- **Invoice card with nested Status badge**: needs new Status badge variants for Unpaid, Overdue and Paid; open.
+- **Radius frame (lg 16, xl 24 swatches)** and **Button doc clipping**: not fixed yet.
+- The old four-item Bottom bar stays until section 05 is archived after lo-fi approval.
+- Reserved region is a generic overlay; Apple's own overlays (outer camera, fold) are in the Apple kit, not copied.
+- Duo side bar and Nav rail are static; the active item is fixed to Today (set Active per screen when used).

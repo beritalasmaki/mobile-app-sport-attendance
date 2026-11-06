@@ -1,6 +1,6 @@
 # Club Coach: plan for the English, adaptive redesign
 
-Status: **agreed 2026-11-06**, step 0 not yet started. Scope: **Club Coach (parents) only**. The coach app is parked, see `docs/coach-app-parked.md`.
+Status: **agreed 2026-11-06**, step 0 done, step 1 started. Scope: **Club Coach (parents) only**. The coach app is parked, see `docs/coach-app-parked.md`.
 
 ## Decisions
 | Topic | Decision |
@@ -10,6 +10,9 @@ Status: **agreed 2026-11-06**, step 0 not yet started. Scope: **Club Coach (pare
 | Apple Duo | Specs received and read from Apple's Figma kit: inner 669 x 951 / 951 x 669, outer 466 x 678 / 678 x 466. Device matrix and layout rules in `docs/devices.md`; notes and sources in `docs/references.md`. |
 | App scope | Parent app only (5 tabs and their sub-screens, about 14-16 screens). |
 | Foldable coverage | 5-6 key screens get a foldable variant: Today, Calendar + event detail (list-detail panes), Conversations, Invoice. Other screens get notes (max width, reflow, nav rail). |
+| Android foldable | Generic medium class (600-839 dp), not one model. |
+| Frames | Compact 402, Pro Max 440, Android medium 707, Duo inner 669, Duo outer 466 (`docs/devices.md`). |
+| Formats | Dates `Thu 18 May, 17:30`, money `EUR 120.00`, fictional Finnish club and team names stay. Token modes: `Light/Dark/Grey`, `Theme`, `Pitch/Blue/Yellow`. |
 | Existing mid-fi | Section 05 (old structure) goes to the archive after the lo-fi is approved. Section 06 and the rationale blocks are the starting point for mid-fi. |
 
 ## Device rules (from the Android adaptive guide, to confirm in step 0)

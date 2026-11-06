@@ -1,6 +1,6 @@
 # design.md
 
-Single source of truth for UI design in this project (Figma file *Design Work* and code). Finnish UI text.
+Single source of truth for UI design in this project (Figma file *Design Work* and code). **UI text and names are being moved to English** (plan: `docs/plan.md`; names below are still the old Finnish ones until step 1 is done). Devices and layout rules: `docs/devices.md`. Sources: `docs/references.md`.
 Change a token here and in Figma together. Do not add colours, sizes or spacing that are not tokens without asking.
 
 ## 1. Principles
@@ -52,10 +52,11 @@ Change a token here and in Figma together. Do not add colours, sizes or spacing 
 - Player photos: cut out without outline, feathered edge, one drop shadow, same image in both modes. Shape opacity via node opacity.
 
 ## 5. Content rules
-- Finnish UI. Child shown by first name only. Team names are realistic (Töölö 2017 Siniset, Kotka 2017 Vihreät). A place always has the pin icon.
+- English UI (dates `Thu 18 May, 17:30`, money `EUR 120.00`). Child shown by first name only. Team names are realistic (Töölö 2017 Siniset, Kotka 2017 Vihreät). A place always has the pin icon.
 - Examples use long text to expose truncation. No real people, crests or photos are final: placeholders until rights are confirmed.
 
 ## 6. Working rules
+- Every screen answers: Where am I? What can I do? Where can I go from here? Tab bar = top-level destinations only, never actions.
 - Always check light and dark mode, and all three clubs, before reporting a change. Explain why a design choice was made and ask before deviating.
 - Figma page CLUB COACH: `00-02` owner's sections, `03 Etusivu B` chosen layout, `99 Arkisto` drafts. UI Kit page: `00 Paletti`, `01 Tokenit`,
   `02 Komponentit`, `03 Ikonit`, `04 Taustat`, `99 Arkisto`. Progress and decisions: `docs/project-log.md`.
